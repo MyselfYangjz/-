@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Neon HTML Demo - Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="../static/css/aos.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+
+<body class="ok ai sn uh ul">
+
+    <!-- Page wrapper -->
+    <div class="nl rj n_ im">
+
+        <!-- Site header -->
+        <header class="y nj z">
+            <div class="rr tf ot ld">
+                <div class="nl ie ii nd lb">
+
+                    <!-- Site branding -->
+                    <div class="rv tc">
+                        <!-- Logo -->
+                        <a class="nu" href="" aria-label="Cruip">
+                            <svg class="nq nv" viewbox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <radialgradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradienttransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo1-b">
+                                        <stop stop-color="#3B82F6" stop-opacity=".64" offset="0%"></stop>
+                                        <stop stop-color="#F472B6" stop-opacity=".876" offset="100%"></stop>
+                                    </radialgradient>
+                                    <radialgradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradienttransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo1-d">
+                                        <stop stop-color="#3B82F6" stop-opacity=".64" offset="0%"></stop>
+                                        <stop stop-color="#D375C2" stop-opacity=".833" offset="50.358%"></stop>
+                                        <stop stop-color="#FBCFE8" stop-opacity=".876" offset="100%"></stop>
+                                    </radialgradient>
+                                    <path d="M12 32c8-6.915 12-12.582 12-17 0-6.627-5.373-12-12-12S0 8.373 0 15c0 4.418 4 10.085 12 17Z" id="logo1-a"></path>
+                                    <path d="M20 29c8-6.915 12-12.582 12-17 0-6.627-5.373-12-12-12S8 5.373 8 12c0 4.418 4 10.085 12 17Z" id="logo1-c"></path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <use fill="url(#logo1-b)" opacity=".64" transform="matrix(1 0 0 -1 0 35)" xlink:href="#logo1-a"></use>
+                                    <use fill="url(#logo1-d)" opacity=".961" xlink:href="#logo1-c"></use>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Desktop navigation -->
+                    <nav class="nl rm">
+
+
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Page content -->
+        <main class="rm">
+
+
+
+            <!-- Features -->
+            <section>
+                <div class="rr tf ot ld">
+                    <div class="oo ca">
+
+                        <!-- Section header -->
+                        <div class="ox om cp">
+                            <h2 class="h2 o_" data-aos="zoom-out">{{data[3][index]['标题']}}</h2>
+                        </div>
+                        <!-- CTA -->
+                        <section>
+                <div class="rr tf ot ld">
+
+                    <!-- CTA box -->
+                    <div class="b sf sl sb iy oa of cf cl im" data-aos="zoom-out" style="height:20px">
+
+                        <!-- Bg illustration -->
+                        <div class="np cx y k q ry tz te" aria-hidden="true">
+                            <img src="../static/picture/cta-illustration.svg" class="ri" width="582" height="662" alt="Illustration">
+                        </div>
+
+                        <div class="nl rj cz ii ie" style="margin-weight: 100px">
+                            <!-- CTA button -->
+                            <div class="rv" style="max-width: 120px; margin-left: 180px;">
+                                  <a class="r ud su sl sv fr nj fj ao"  >
+                                    评论数:{{ data[3][index]['评论数'] }}
+                                    <span class="uc uv fq ac ah ap tp"></span>
+                                  </a>
+                            </div>
+                            <div class = "rv">
+                                <a class="r ud su sl sv fr nj fj ao">
+                                    点赞数:{{ data[3][index]['点赞数'] }}
+                                    <span class="uc uv fq ac ah ap tp"></span>
+                                </a>
+                            </div>
+                            <div class = "rv" style=" margin-right: 180px;">
+                                <a class="r ud su sl sv fr nj fj ao" >
+                                    发布时间:{{ data[3][index]['发布时间'][:10] }} <span class="uc uv fq ac ah ap tp"></span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+                        <div class="og" data-aos="zoom-out">
+                            <img src="../static/picture/features.svg" width="1104" height="512" alt="Features">
+                        </div>
+
+
+
+
+                </div>
+            </section>
+
+            <!-- Features #2 -->
+            <section class="b">
+                <!-- Bg gradient -->
+                <div class="y j x k sa sc sm as nm v te" aria-hidden="true"></div>
+
+                <!-- Bg illustration -->
+                <div class="y j _ te ty" aria-hidden="true">
+                    <img src="../static/picture/features-illustration.svg" class="ri" width="608" height="305" alt="Illustration">
+                </div>
+            </section>
+            <!-- Testimonials -->
+            <section class="b">
+                    <div class="article">
+                      <div class="article-header">
+                        <h1>{{ data[3][index]['标题']}}</h1>
+                      </div>
+                      <div class="article-content">
+                        <div class="article-textarea">
+                          <div class="scroll-wrapper">
+                            <div class="scroll-content">
+                              <p>{{data[3][index]['内容']}}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                {% for i in range(1,data[3][index]|length-4) %}
+                <div class="textbox">
+                      <div class="answer">
+                          <div class="answer-header">
+                              <h3>评论者：{{ data[3][index]['评论{}'.format(i)]['评论者'] }}</h3>
+                              <p>回答时间：{{ data[3][index]['评论{}'.format(i)]['评论时间'][:10] }}</p>
+                          </div>
+                          <div class="answer-content">
+                              <p>{{ data[3][index]['评论{}'.format(i)]['评论内容'] }}</p>
+                          </div>
+                      </div>
+
+                </div>
+                {% endfor %}
+
+
+            </section>
+
+            <!-- Resources -->
+            <section>
+                <div class="rr tf ot ld">
+                    <div class="oo ca">
+            
+                        <!-- Section header -->
+                        <div class="rf tf ox om cp">
+                            <h2 class="h2 o_">END</h2>
+                        </div>
+            
+                        <!-- Content -->
+
+            
+                    </div>
+                </div>
+            
+            </section>
+
+
+            
+        </main>
+
+        <!-- Site footer -->
+        <footer>
+            <div class="rr tf ot ld">
+
+                <!-- Blocks -->
+                <div class="nh la io ol cc">
+
+                    <!-- 1st block -->
+                    <div class="ln cg cj">
+                        <div class="tg">
+                            <!-- Logo -->
+                            <a class="nc" href="" aria-label="Cruip">
+                                <svg class="nq nv" viewbox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <radialgradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradienttransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo2-b">
+                                            <stop stop-color="#3B82F6" stop-opacity=".64" offset="0%"></stop>
+                                            <stop stop-color="#F472B6" stop-opacity=".876" offset="100%"></stop>
+                                        </radialgradient>
+                                        <radialgradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradienttransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo2-d">
+                                            <stop stop-color="#3B82F6" stop-opacity=".64" offset="0%"></stop>
+                                            <stop stop-color="#D375C2" stop-opacity=".833" offset="50.358%"></stop>
+                                            <stop stop-color="#FBCFE8" stop-opacity=".876" offset="100%"></stop>
+                                        </radialgradient>
+                                        <path d="M12 32c8-6.915 12-12.582 12-17 0-6.627-5.373-12-12-12S0 8.373 0 15c0 4.418 4 10.085 12 17Z" id="logo2-a"></path>
+                                        <path d="M20 29c8-6.915 12-12.582 12-17 0-6.627-5.373-12-12-12S8 5.373 8 12c0 4.418 4 10.085 12 17Z" id="logo2-c"></path>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <use fill="url(#logo2-b)" opacity=".64" transform="matrix(1 0 0 -1 0 35)" xlink:href="#logo2-a"></use>
+                                        <use fill="url(#logo2-d)" opacity=".961" xlink:href="#logo2-c"></use>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="oj ux">
+                            <a class="up fo al ah ap" href="#0">Copyright &copy; 2022.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+                        </div>
+                    </div>
+
+                    <!-- 2nd block -->
+                    <div class="lr lg cy">
+                        <h6 class="un uy us uu tg">Products</h6>
+                        <ul class="oj ih">
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Neon Manage</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Neon Analyse</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Neon Launch</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Experimentation</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 3rd block -->
+                    <div class="lr lg cy">
+                        <h6 class="un uy us uu tg">Resources</h6>
+                        <ul class="oj ih">
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Blog</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Cheat Sheet</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Channel Partners</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Affiliate Program</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 4th block -->
+                    <div class="lr lg cy">
+                        <h6 class="un uy us uu tg">Compare</h6>
+                        <ul class="oj ih">
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Session Recording</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Feature Flags</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Heatmaps</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Correlation Analysis</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 5th block -->
+                    <div class="lr lg cy">
+                        <h6 class="un uy us uu tg">Company</h6>
+                        <ul class="oj ih">
+                            <li>
+                                <a class="up fo al ah ap" href="#0">About Us</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Our Story</a>
+                            </li>
+                            <li>
+                                <a class="up fo al ah ap" href="#0">Work With Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../static/js/alpinejs.min.js" defer=""></script>
+    <script src="../static/js/aos.js"></script>
+    <script src="../static/js/main.js"></script>
+
+
+
+<script async="" src='../static/js/js.js'></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-125021779-1', { 'anonymize_ip': true });</script><script>console.log("%cImportant!", "color: blue; font-size: x-large");console.log("%cThe page you are viewing is for demo purposes only. CSS and HTML have been minified and class names have been shortened to improve the page load time. Download our templates from #", "font-size: large");</script><script>const pagesList = [{"name":"Home","url":"#","active":true},{"name":"Sign in","url":"#","active":false},{"name":"Sign up","url":"#","active":false},{"name":"Reset password","url":"#","active":false}];if(window != top){window.parent.postMessage(pagesList, "#")};</script></body></html>
